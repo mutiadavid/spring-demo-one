@@ -12,6 +12,8 @@ public class SpringDemoApp {
 
         System.out.println("Lunch: "+animal.getMeal());
 
+        Dog dog = context.getBean("animal",Dog.class);
+
         context.close();
     }
 

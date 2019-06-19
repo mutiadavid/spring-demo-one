@@ -10,8 +10,11 @@
     <bean id="foodService" class="ke.co.mutia.springdemo.MeatService">
     </bean>
 
-    <bean id="animal" class="ke.co.mutia.springdemo.Dog">
-        <constructor-arg ref="foodService"/>
+    <bean
+            id="animal"
+            class="ke.co.mutia.springdemo.Dog"
+            scope="prototype">
+        <property name="foodService" ref="foodService"/>
     </bean>
 
 </beans>
