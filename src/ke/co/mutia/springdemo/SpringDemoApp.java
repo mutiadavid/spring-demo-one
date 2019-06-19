@@ -10,6 +10,8 @@ public class SpringDemoApp {
 
         System.out.println(animal.communicate());
 
+        System.out.println("Lunch: "+animal.getMeal());
+
         context.close();
     }
 
