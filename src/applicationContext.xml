@@ -11,7 +11,7 @@
     </bean>
 
     <bean id="animal" class="ke.co.mutia.springdemo.Dog">
-        <constructor-arg ref="foodService"/>
+        <property name="foodService" ref="foodService"/>
     </bean>
 
 </beans>
